@@ -1,0 +1,258 @@
+/* MAIN.STYL ======================================= */
+/* import base styl */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul,
+li,
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+main,
+li,
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+strong {
+  font-weight: bold;
+}
+a,
+button {
+  color: inherit;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+}
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+html,
+body,
+div,
+table,
+p,
+input {
+/* color: colorGray5 */
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none !important;
+}
+.desktop-hide {
+  display: none;
+}
+.desktop-show {
+  display: block;
+}
+section {
+  margin: 0 auto;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.section-row {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+/* import views styl */
+.download {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  background: #463e3e;
+}
+.download .container {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  position: relative;
+  margin: 0 auto;
+}
+.download .download__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.download .download__row:last-child {
+  margin-top: auto;
+  overflow: hidden;
+  display: block;
+}
+.download .download__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-top: 30px;
+}
+.download .download__logo img {
+  max-width: 250px;
+}
+.download .download__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d6cbcb;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 0;
+}
+.download .download__text p {
+  font-size: 16px;
+  line-height: normal;
+}
+.download .download__text a {
+  margin-top: 20px;
+  color: #bca0cc;
+  font-size: 14px;
+}
+.download .download__button {
+  margin-bottom: 20px;
+}
+.download .download__button a {
+  display: block;
+}
+.download .download__button a img {
+  width: 180px;
+}
+.download .download__image {
+  position: relative;
+  width: 100%;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+@media (min-width: 550px) and (orientation: landscape) {
+  .download {
+    height: 100% !important;
+  }
+  .download .download__button {
+    margin-bottom: 40px;
+  }
+}
